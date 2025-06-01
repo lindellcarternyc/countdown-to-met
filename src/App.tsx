@@ -40,9 +40,11 @@ const App = () => {
 
   return (
     <div className="App">
-      <h2>Time to</h2>
-      <h1>THE MET</h1>
-      <Countdown duration={duration} />
+      <div>
+        <h2>Time to</h2>
+        <h1>THE MET</h1>
+        <Countdown duration={duration} />
+      </div>
     </div>
   );
 };
