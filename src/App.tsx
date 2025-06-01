@@ -1,3 +1,5 @@
+import porgy from "../public/porgy.jpg";
+
 import { intervalToDuration } from "date-fns/intervalToDuration";
 
 import "./App.css";
@@ -39,7 +41,12 @@ const App = () => {
   });
 
   return (
-    <div className="App">
+    <div
+      className="App"
+      style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),url(${porgy})`,
+      }}
+    >
       <div>
         <h2>Time to</h2>
         <h1>THE MET</h1>
