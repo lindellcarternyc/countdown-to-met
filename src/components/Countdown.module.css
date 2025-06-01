@@ -1,0 +1,21 @@
+.countdown {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+.countdown-group {
+  display: flex;
+  gap: 1rem;
+  div {
+    p {
+      font-size: 3rem;
+    }
+  }
+}
+
+.semicolon {
+  font-size: 2rem;
+  margin-top: 0.75rem;
+}
