@@ -16,8 +16,7 @@ const getDuration = (interval: { start: Date; end: Date }): Duration => {
 
   return {
     months: duration.months || 0,
-    weeks: Math.floor((duration.days || 0) / 7),
-    days: (duration.days || 0) % 7,
+    days: duration.days || 0,
     hours: duration.hours || 0,
     minutes: duration.minutes || 0,
     seconds: duration.seconds || 0,

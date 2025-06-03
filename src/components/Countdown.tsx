@@ -5,7 +5,6 @@ export interface CountdownProps {
   duration: {
     months: number;
     days: number;
-    weeks: number;
     hours: number;
     minutes: number;
     seconds: number;
@@ -17,8 +16,7 @@ const Countdown = ({ duration }: CountdownProps) => {
     <div className={styles.countdown}>
       <div className={styles["countdown-group"]}>
         <CountdownBox time={duration.months} label="months" />
-        <CountdownBox time={duration.weeks} label="weeks" />
-        <CountdownBox time={duration.days} label="day" />
+        <CountdownBox time={duration.days} label="days" />
       </div>
       <div className={styles["countdown-group"]}>
         <CountdownBox time={duration.hours} label="hours" />
